@@ -44,7 +44,7 @@ Dark Grey: #4e4a47;
  	.hero {
 	height:650px;
 	width:100%;
-	background: url('/img/header.jpg') center no-repeat;
+	background: url('img/header.jpg') center no-repeat;
 	background-size: cover;
 	
 	}
