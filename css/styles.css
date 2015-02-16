@@ -1,0 +1,265 @@
+
+
+/****************
+
+Global Styles
+
+
+Colors
+------
+Lime Green: #BCDF1C;
+Purple: #850c70;
+Dark Grey: #4e4a47;
+***************/
+
+.button{
+
+	background: #BCDF1C;
+	color:#333333;
+}
+
+.button:hover{
+
+	background: #A8C719;
+	color:#333333;
+}
+
+
+
+
+
+/*********
+
+ Global Page Header 
+ 
+ ***********/
+
+ 	a img  {
+
+ 		margin-top: 12px;
+ 		margin-left: 20px
+ 	}
+
+
+ 	.hero {
+	height:650px;
+	width:100%;
+	background: url('/img/header.jpg') center no-repeat;
+	background-size: cover;
+	
+	}
+
+
+	.top-bar.expanded .title-area {
+
+		background: #ffffff;
+	}
+	
+	.top-bar, .top-bar-section li:not(.has-form) a:not(.button),.top-bar .name h1 a, .top-bar .name h2 a, .top-bar .name h3 a, .top-bar .name h4 a, .top-bar .name p a,.top-bar .toggle-topbar a {
+		
+		background:#ffffff;
+		color:#333333;
+		font-size: 1.25rem;
+		
+		}
+
+		.top-bar-section li:not(.has-form) a:not(.button):hover{
+
+		background: #850c70;
+		color:#ffffff;
+		font-size: 1.25rem;
+		
+		}
+
+	.top-bar .toggle-topbar.menu-icon a, .menu-icon, .top-bar .name span a {
+
+		color:#333333;
+	}
+.top-bar-section li.active:not(.has-form) a:not(.button) {
+
+	background: #BCDF1C;
+	color:#333333; 
+}
+
+.top-bar-section li.active:not(.has-form) a:not(.button):hover{
+
+	background: #A8C719;
+	color:#333333;
+}
+
+/********* 
+
+Pricing Tables
+
+************/
+
+.colorrow2 {
+
+	background: #FFFFFF;
+	width: 100%;
+	padding-top:20px;
+	padding-bottom:20px;
+}
+
+.pricing-table .title {
+
+	background: #850c70;
+}
+
+
+/*****************
+
+	Speakers
+
+****************/
+
+
+.colorrow{
+	background: #4e4a47;
+	width: 100%;
+	padding-top:20px;
+	padding-bottom:20px;
+}
+.colorrow h4, .colorrow h2{
+	color:white;
+}
+
+.colorrow p{
+	color: #BCDF1C;
+}
+
+img.speakerphoto {
+
+	border-radius: 50%;
+}
+
+
+
+
+/**************
+
+Testimonial
+
+**********/
+
+.testimonial h5 {
+
+padding: 0 10px 0 10px;
+}
+
+footer {
+
+	background: #4e4a47;
+	width: 100%;
+	padding-top:40px;
+	height: 100%;
+	color: #BCDF1C;
+}
+
+footer h5, footer h2 {
+
+	color: #eeeeee;
+}
+
+
+/************** 
+
+	Hotel 
+
+***************/
+
+.hotel {
+
+	padding-bottom: 20px;
+}
+
+div.rates {
+
+	border: solid 1px #850c70;
+	padding-left: 20px;
+	margin-bottom: 40px;
+	text-align: center;
+	color:#850c70;
+	margin-left: 150px;
+	width: 400px;
+}
+div.rates h4{
+
+	color:#850c70;
+}
+
+
+/*****************
+
+	Schedule
+
+**************/
+
+.colorrow3 {
+
+	background: #ad208e;
+	width: 100%;
+	padding-top:20px;
+	padding-bottom:20px;
+}
+
+
+button.active {
+
+	background: #BCDF1C;
+	color:#333333;
+}
+
+button.active:hover {
+
+	background: #A8C719;
+	color:#333333;
+}
+
+.schedule img {
+
+	border: solid 1px white;
+}
+
+.schedule h2, .schedule p, .schedule h3 {
+
+	color: #ffffff;
+}
+
+
+/********************
+
+	5 Reasons
+
+*******************/
+
+
+.fivereasons h3 {
+
+	color: #850c70;
+}
+
+
+/****************
+
+	Workshop
+
+****************/
+
+.workshop {
+
+	background: #00aeef;
+	width: 100%;
+	padding-top:20px;
+	padding-bottom:20px;	
+
+}
+
+.workshop p, .workshop ul, .workshop h2 {
+
+	color:#ffffff;
+}
+
+
+
+
