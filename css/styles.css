@@ -12,16 +12,50 @@ Purple: #850c70;
 Dark Grey: #4e4a47;
 ***************/
 
+h3,p {
+
+	font-weight: 200;
+}
+
+h2 {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 3.5rem;
+	letter-spacing: 1px;
+}
 .button{
 
 	background: #BCDF1C;
 	color:#333333;
+	font-weight: 200;
 }
 
 .button:hover{
 
-	background: #A8C719;
-	color:#333333;
+	background: #ad208e;
+	color:#ffffff;
+	font-weight: 200;
+}
+
+
+.bordergrey {
+	background: none repeat scroll 0 0 #999999;
+	display: block;
+	height: 2px;
+	margin: 0 auto;
+	width: 175px;
+	margin-bottom: 40px;
+
+}
+
+.borderwhite {
+	background: none repeat scroll 0 0 #fcfcfc;
+	display: block;
+	height: 2px;
+	margin: 0 auto;
+	width: 175px;
+	margin-bottom: 40px;
+
 }
 
 
@@ -40,13 +74,36 @@ Dark Grey: #4e4a47;
  		margin-left: 20px
  	}
 
+.hero p.scroll {
+	margin-top: 10rem;
+}
+ 	
+ 	video#bgvid {
+
+	position: fixed; 
+	right: 0; 
+	bottom: 0;
+	min-width: 100%; 
+	min-height: 100%;
+	width: auto; 
+	height: auto; 
+	z-index: -100;
+	background-size: cover;
+	}
+
 
  	.hero {
-	height:650px;
+	height:100%;
 	width:100%;
-	background: url('../img/header.jpg') center no-repeat;
+	/*background: url('/img/header.jpg') center no-repeat;*/
 	background-size: cover;
+	z-index: 100;
 	
+	}
+
+	.hero p {
+
+		margin-top: 20rem;
 	}
 
 
@@ -60,6 +117,7 @@ Dark Grey: #4e4a47;
 		background:#ffffff;
 		color:#333333;
 		font-size: 1.25rem;
+		font-weight: 200;
 		
 		}
 
@@ -68,7 +126,13 @@ Dark Grey: #4e4a47;
 		background: #850c70;
 		color:#ffffff;
 		font-size: 1.25rem;
+		font-weight: 200;
 		
+		}
+
+		.top-bar-section ul li {
+
+			border-right: solid 1px #eee;
 		}
 
 	.top-bar .toggle-topbar.menu-icon a, .menu-icon, .top-bar .name span a {
@@ -83,9 +147,46 @@ Dark Grey: #4e4a47;
 
 .top-bar-section li.active:not(.has-form) a:not(.button):hover{
 
-	background: #A8C719;
-	color:#333333;
+	background: #ad208e;
+	color:#ffffff;
 }
+/*****************
+
+	Intro
+
+*******************/
+
+.intro {
+
+	padding-top:40px;
+	padding-bottom:20px;
+	background: #4e4a47;
+
+}
+
+.intro p {
+	color: white;
+	font-size: 18px;
+	font-weight: 200;
+}
+
+.intro h2 {
+	color: #BCDF1C;
+	font-weight: 700;
+	font-size: 3.5rem;
+	letter-spacing: 1px;
+}
+ 
+.intro img {
+	height: 100%;
+	width: 100%;
+}
+
+
+
+
+
+
 
 /********* 
 
@@ -95,7 +196,7 @@ Pricing Tables
 
 .colorrow2 {
 
-	background: #FFFFFF;
+	background: #FCFCFC;
 	width: 100%;
 	padding-top:20px;
 	padding-bottom:20px;
@@ -104,6 +205,7 @@ Pricing Tables
 .pricing-table .title {
 
 	background: #850c70;
+	font-weight: 200;
 }
 
 
@@ -119,21 +221,37 @@ Pricing Tables
 	width: 100%;
 	padding-top:20px;
 	padding-bottom:20px;
+	margin-top: -25px;
 }
-.colorrow h4, .colorrow h2{
-	color:white;
+.colorrow h4{
+	color:#fcfcfc;
+	font-weight: 200;
+}
+
+.colorrow h2 {
+	color: #fcfcfc;
+	font-weight: 700;
+	font-size: 3.5rem;
+	letter-spacing: 1px;
 }
 
 .colorrow p{
 	color: #BCDF1C;
+	font-weight: 200;
 }
 
 img.speakerphoto {
 
 	border-radius: 50%;
+	border: solid 2px #fcfcfc; 
 }
 
+img.speakerphoto2 {
 
+	border-radius: 50%;
+	width: 100px;
+	border: solid 2px #fcfcfc; 
+}
 
 
 /**************
@@ -144,23 +262,59 @@ Testimonial
 
 .testimonial h5 {
 
-padding: 0 10px 0 10px;
+padding: 10px 20px 10px 20px;
+font-weight: 200;
 }
 
-footer {
+.testrow {
 
 	background: #4e4a47;
 	width: 100%;
 	padding-top:40px;
-	height: 100%;
 	color: #BCDF1C;
+	font-weight: 200;
+	position: absolute;
 }
 
-footer h5, footer h2 {
+.testrow h5{
 
-	color: #eeeeee;
+	color: #fcfcfc;
+	font-weight: 200;
 }
 
+.testrow h2 {
+	color: #fcfcfc;
+	font-weight: 700;
+	font-size: 3.5rem;
+	letter-spacing: 1px;
+
+}
+
+.bubble 
+{
+position: relative;
+width: 100%;
+height: 100%;
+padding: 0px;
+background: #00aeef;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+}
+
+.bubble:after 
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 15px 15px 0;
+border-color: #00aeef transparent;
+display: block;
+width: 0;
+z-index: 1;
+bottom: -15px;
+left: 135px;
+}
 
 /************** 
 
@@ -169,25 +323,59 @@ footer h5, footer h2 {
 ***************/
 
 .hotel {
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 40px;
+	/*background: url('/img/hampton.jpg')center no-repeat;*/
+	background-size: cover;
+	font-weight: 200;
+	background: #00aeef;
+	color: #fcfcfc;
 
-	padding-bottom: 20px;
 }
 
-div.rates {
+ .hotel h3 {
 
-	border: solid 1px #850c70;
+	color: #fcfcfc;
+}
+
+.hotel h2 {
+
+	color: #fcfcfc;
+	font-weight: 700;
+	font-size: 3.5rem;
+	letter-spacing: 1px;
+}
+
+.hotel a {
+
+	color: #333333;
+}
+
+/*.hotel img{
+
+	border-radius: 50%;
+}*/
+
+/*div.rates {
+
 	padding-left: 20px;
 	margin-bottom: 40px;
 	text-align: center;
 	color:#850c70;
 	margin-left: 150px;
 	width: 400px;
-}
+	font-weight: 200;
+}*/
 div.rates h4{
 
-	color:#850c70;
+	color:#fcfcfc;
+	font-weight: 200;
 }
 
+.hotelinfo {
+	padding-left: 40px;
+}
 
 /*****************
 
@@ -197,10 +385,14 @@ div.rates h4{
 
 .colorrow3 {
 
-	background: #ad208e;
+
+	background: #ad208e; /* Old browsers */
+	background: linear-gradient(90deg, #ad208e 0%,#701358 50%);
+
 	width: 100%;
 	padding-top:20px;
 	padding-bottom:20px;
+	font-weight: 200;
 }
 
 
@@ -208,22 +400,33 @@ button.active {
 
 	background: #BCDF1C;
 	color:#333333;
+	font-weight: 200;
 }
 
 button.active:hover {
 
-	background: #A8C719;
-	color:#333333;
+	background: #ad208e;
+	color:#ffffff;
+	font-weight: 200;
 }
 
-.schedule img {
+/*.schedule img {
 
-	border: solid 1px white;
-}
+	box-shadow: 5px 5px 20px #cccccc;
+}*/
 
 .schedule h2, .schedule p, .schedule h3 {
 
 	color: #ffffff;
+	font-weight: 200;
+}
+
+.schedule h2 {
+
+	color: #fcfcfc;
+	font-weight: 700;
+	font-size: 3.5rem;
+	letter-spacing: 1px;
 }
 
 
@@ -234,9 +437,14 @@ button.active:hover {
 *******************/
 
 
+.fivereasons {
+
+	background: #fcfcfc;
+}
 .fivereasons h3 {
 
 	color: #850c70;
+	font-weight: 200;
 }
 
 
@@ -248,18 +456,64 @@ button.active:hover {
 
 .workshop {
 
-	background: #00aeef;
+	background: #fcfcfc;
 	width: 100%;
 	padding-top:20px;
-	padding-bottom:20px;	
+	padding-bottom:20px;
+	font-weight: 200;
+	margin-top: -40px;	
 
 }
 
-.workshop p, .workshop ul, .workshop h2 {
+.workshop p, .workshop ul{
 
-	color:#ffffff;
+	color:#333333;
+	font-weight: 200;
+}
+
+.workshop h2{
+
+	font-weight: 700;
+	font-size: 3.5rem;
+	letter-spacing: 1px;
+}
+.workshop h3 {
+
+	color:#850c70;
+	font-weight: 200;
 }
 
 
+
+/*********************
+
+	Map Styles
+
+*****************/
+
+#map {
+        height:400px;
+        width:50%;
+        margin:0 auto;
+        border: solid 1px #eeeeee;
+    }
+    .gm-style-iw * {
+        display: block;
+        width: 100%;
+    }
+    .gm-style-iw h4, .gm-style-iw p {
+        margin: 0;
+        padding: 0;
+    }
+    .gm-style-iw a {
+        color: #4272db;
+    }
+
+
+   /* .locationinfo {
+
+    	z-index: 1000;
+    	margin-bottom: -26%;
+    }*/
 
 

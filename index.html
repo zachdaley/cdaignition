@@ -4,16 +4,22 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LIFE SHOTZ | CDA IGNITION 2015</title>
+
     <link rel="stylesheet" href="css/foundation.css" />
+    <link href='http://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/styles.css" />
     <script src="js/vendor/modernizr.js"></script>
+    <script type="text/javascript">
+    </script>
   </head>
   <body>
-    
+
+  <!-- Nav Bar -->
+   <div class="fixed">
     <nav class="top-bar" data-topbar role="navigation">
   <ul class="title-area">
     <li class="name">
-      <a href="index.html"><img class="logo" src="img/logo.png"></a>
+      <a href="index.html"><img class="logo" src="../img/logo.png"></a>
     </li>
   
     <li class="toggle-topbar menu-icon"><a href="#"><span>MENU</span></a></li>
@@ -22,44 +28,90 @@
   <section class="top-bar-section">
     <ul class="right">
     <li class="active"><a href="#">Register</a></li>
+    <li><a id="packagesBtn">Packages</a></li>
       <li><a id="scheduleBtn">Schedule</a></li>
       <li><a id="5reasonsBtn">5 Reasons</a></li>
-      <li><a id="hotelBtn">Hotel</a></li>
       <li><a id="visionBtn">Your Vision</a></li>
+      <li><a id="hotelBtn">Hotel</a></li>
     </ul>
   </section>
 </nav>
+</div>
        
-       
-     <a href="index.html">
+     
          <header class="hero">
+         <video autoplay loop id="bgvid">
+            <source src="https://ia902308.us.archive.org/28/items/MatchStrikeSlowMotionVertical/Vertical%20Match%20Strike%20H264.mp4" type="video/mp4">
+            </video>
         <div class="row">
+          <div class="large-12 columns text-center">
+            <p><img src="../img/header_logo_flat.png"></p>
+            <a id="cdaBtn"><p class="scroll"><img src="../img/scroll_arrow.png"></p></a>
+            <!-- Arrow Created by Ben Howard -->
+          </div>
         </div>
         </header>
-    </a>
     
-    <!-- Pricing Tables -->
-    <div class="colorrow2">
+    <div class="intro" id="cda">
       <div class="row">
+      <h2 align="center">We're Gonna Be On Fire!</h2>
+      <span class="borderwhite"></span>
+          <div class="large-5 medium-5 columns hide-for-small">
+              <ul class="example-orbit-content" data-orbit 
+              data-options=
+                  "animation:slide;
+                  pause_on_hover:false;
+                  animation_speed:500;
+                  navigation_arrows:false;
+                  bullets:false;
+                  slide_number:false;
+                  timer_speed: 5000;
+                  timer_progress_class: false;">
+                <li>
+                <img src="../img/cda1.jpg" alt="slide 1" />
+    
+              </li>
+              <li class="active">
+                <img src="../img/cda2.jpg" alt="slide 2" />
+              </li>
+              <li>
+                <img src="../img/cda3.jpg" alt="slide 3" />
+              </li>
+                  </ul>
+          </div>
+        <div class="large-7 medium-7 columns">
+              <p>The lakeside community of Coeur d’Alene is a haven of spectacular natural beauty. Known as “your lakeside playground,” there’s something for everyone, from avid golfers to boaters to those who just love a beautiful sunset.</p>
+              <p>Of course … at Ignition, the magic is gonna be happening on stage! Join us as the best of the best in our industry light your fire and teach you the skills to grow your business full out.</p>
+              <p>Ignition is <strong style="font-weight:400;">THE EVENT</strong> for teams to grow their belief, their knowledge, their excitement and ultimately … their wealth! </p>
+          </div>
+      </div>
       <br>
-      <h2 align="center">Packages</h2>
+    </div>
+
+
+
+    <!-- Pricing Tables -->
+    <div class="colorrow2" id="packages">
+      <div class="row">
+      <h2 align="center" style="margin-top:40px; margin-bottom:20px;">Packages</h2>
+      <span class="bordergrey"></span>
       <br>
         <div class="large-12 columns">
         		<div class="large-6 columns">
               	<ul class="pricing-table">
-                    <li class="title">GOOD DEAL</li>
+                    <li class="title" style="font-size:1.25rem;">GOOD DEAL</li>
                     <li class="price">$249.99</li>
                     <li class="bullet-item" style="font-size:1.25rem;">$249 Ignition Event</li>
-                    <li class="cta-button"><a class="button" href="#">Register Now</a></li>
+                    <li class="cta-button"><a class="button radius" href="#">Register Now</a></li>
                   </ul>
                  </div>
                  <div class="large-6 columns">
               	<ul class="pricing-table">
-                    <li class="title">BEST DEAL</li>
+                    <li class="title" style="font-size:1.25rem;">BEST DEAL</li>
                     <li class="price">$349.99</li>
-                    <li class="bullet-item" style="font-size:1.25rem;">$100 Vision Workshop</li>
                     <li class="bullet-item" style="font-size:1.25rem;">$249 Ignition Event</li>
-                    <li class="cta-button"><a class="button" href="#">Register Now</a></li>
+                    <li class="bullet-item" style="font-size:1.25rem;">$100 Vision Workshop</li>
+                    <li class="cta-button"><a class="button radius" href="#">Register Now</a></li>
                   </ul>
                  </div> 
             </div>
@@ -70,113 +122,75 @@
     <!-- Speakers -->
 <div class="colorrow" id="speakers">
     <div class="row">
-        <h2 align="center">Speakers</h2>
-        <br />
+        <h2 align="center" style="margin-top:40px; margin-bottom:20px;">Speakers</h2>
+        <span class="borderwhite"></span>
         <div class="medium-3 large-3 text-center columns">
-          <img class="speakerphoto" src="img/richard.jpg">
+          <img class="speakerphoto" src="../img/richard.jpg">
             <h4>Richard Brooke</h4>
             <p>Chief Visionary Officer</p>
         </div>
         <div class="medium-3 large-3 text-center columns">
-          <img class="speakerphoto" src="img/lisa.jpg">
+          <img class="speakerphoto" src="../img/lisa.jpg">
             <h4>Lisa Jimenez</h4>
             <p>Advisory Board, Owner, Platinum</p>
         </div>
         <div class="medium-3 large-3 text-center columns">
-          <img class="speakerphoto" src="img/kimmy.jpg">
+          <img class="speakerphoto" src="../img/kimmy.jpg">
             <h4>Kimmy Brooke</h4>
             <p>Advisory Board</p>
         </div>
         <div class="medium-3 large-3 text-center columns">
-          <img class="speakerphoto" src="img/melissa.jpg">
+          <img class="speakerphoto" src="../img/melissa.jpg">
             <h4>Melissa Gulbranson</h4>
             <p>Vice President of Marketing</p>
         </div>
       </div>
 
       <div class="row">
-        <div class="large-offset-2 medium-3 large-3 text-center columns">
-          <img class="speakerphoto" src="img/stacey.jpg">
+        <div class="medium-3 large-3 text-center columns">
+          <img class="speakerphoto" src="../img/stacey.jpg">
             <h4>Stacey Holley</h4>
             <p>Vice President of Operations</p>
         </div>
         <div class="medium-3 large-3 text-center columns">
-          <img class="speakerphoto" src="img/courtney.jpg">
+          <img class="speakerphoto" src="../img/courtney.jpg">
             <h4>Courtney Schwagler</h4>
             <p>Director of Product Education</p>
         </div>
         <div class="medium-3 large-3 text-center columns end">
-          <img class="speakerphoto" src="img/tom.jpg">
+          <img class="speakerphoto" src="../img/tom.jpg">
             <h4>Tom Lunneborg</h4>
             <p>Vice President of Product Development and Logistics</p>
         </div>
       </div>
-</div>
-<br />
-      <!-- Hotel Location -->
-<div class="hotel" id="hotel">
-    <div class="row">
-      <h2 align="center">Location</h2>
-        <br />
-        <div class="medium-4 large-4 text-center columns">
-          <p><img src="img/hampton.jpg"></p>
-        </div>
-        <div class="medium-8 large-8 text-center columns">
-          <h3>Hampton Inn &amp; Suites</h3>
-          <p>1500 Riverstone Dr., Coeur d'Alene, Idaho, 83814, USA<br>
-          <a href="http://hamptoninn3.hilton.com/en/hotels/idaho/hampton-inn-and-suites-coeur-d-alene-CDAIDHX/index.html">Visit Website</a> </p>
-          <div class="rates">
-            <h4>Room Rates</h4>
-            <p>$119 per night for Queen/King Rooms<br>
-                $139 per night for King Suites<br>
-                Code for discount room rate: <strong>Life Shotz</strong>
-            </p>
-        </div>
-        </div>
-        <hr>
-    </div>
-    <div class="row" style="margin-top:20px;">
-        <div class="medium-8 large-8 columns">
-          <p style="text-align:left;">
-          LIfe Shotz is located in the lakeside city of Coeur d’Alene, Idaho. Just 30 minutes east of Spokane, Washington, the northern Idaho Panhandle is an outdoor-lovers haven of spectacular natural beauty.
-          </p>
-          <p style="text-align:left;">
-          Fort Coeur d’Alene was constructed in the 1870s at the instruction of General William T. Sherman. The city that grew up around it now boasts a population approaching 50,000. Coeur d’Alene continues to expand as people flock here for its promise of fresh air and abundant year-round activities.
-          </p>
-        </div>
-        <div class="medium-4 large-4 text-center columns style="margin-top:20px;"">
-          <p><img src="img/cda_beach.jpg"></p>
-        </div>
-    </div>
 </div>
 
 <div class="colorrow3 schedule" id="schedule">
 <div class="row">
             <div class="large-6 columns">
             <!-- Schedule -->
-            <br>
-              <h2>The Agenda</h2>
-              <br>
+              <h2 style="margin-top:40px; margin-bottom:20px;">The Agenda</h2>
+              <span class="borderwhite" style="margin-left:6rem;"></span>
             <div class="row">
-              <div class="medium-12 large-12 columns text-center">
+              <div class="medium-12 large-12 columns">
                 <h3>Thursday, September 10th</h3>
-                <p><strong>6pm</strong>-Welcome Reception Party at the office</p>
+                <p><strong style="color:#BCDF1C;">6pm:</strong>&nbsp; Welcome Reception Party at the office</p>
               </div>
 
-              <div class="medium-12 large-12 columns text-center">
+              <div class="medium-12 large-12 columns">
                 <h3>Friday, September 11th</h3>
-                <p><strong>9am - 6pm</strong>-Visions Workshop (earlier start time)</p>
+                <p><strong style="color:#BCDF1C;">9am - 6pm:</strong>&nbsp;Visions Workshop (earlier start time)</p>
               </div>
 
-              <div class="medium-12 large-12 columns text-center">
+              <div class="medium-12 large-12 columns">
                 <h3>Saturday, September 12th</h3>
-                <p><strong>9am - 6pm</strong>-General Session</p>
+                <p><strong style="color:#BCDF1C;">9am - 6pm:</strong>&nbsp;General Session</p>
               </div>
 
-              <div class="medium-12 large-12 columns text-center">
+              <div class="medium-12 large-12 columns">
                 <h3>Sunday, September 13th</h3>
-                <p><strong>9am - 12pm</strong>-General Session</p>
-                <p><button class="active">Register Now</button></p>
+                <p><strong style="color:#BCDF1C;">9am - 12pm:</strong>&nbsp;General Session</p>
+                <p><button class="active radius">Register Now</button></p>
               </div>
             </div>              
          </div>
@@ -184,9 +198,9 @@
         
          
          <!--  Pic Sidebar -->
-        <div class="large-6 columns text-center">
-              <p style="margin-top:20px;"><img src="img/agenda1.jpg"/></p>
-              <p><img src="img/agenda2.jpg"/></p>
+        <div class="large-6 columns text-center hide-for-small">
+              <p style="margin-top:40px;"><img src="../img/agenda1.jpg"/></p>
+              <p><img src="../img/agenda2.jpg"/></p>
         </div>
         
       </div>
@@ -203,7 +217,7 @@
           <div class="row">
               <div class="large-offset-2 medium-8 large-8 columns text-center">
                 <h2 style="margin-top:40px; margin-bottom:20px;">Need A Good Reason To Attend?</h2>
-                  
+                  <span class="bordergrey"></span>
                 <h3>Light The Fire.</h3>
                 <p>When you're surrounded by people who share the same goals and work just as hard as you do, you'll discover entirely new levels of inspiration and motivation, and it will change the entire way you look at life. Start realizing your success is inevitable—because it is!</p>
               </div>
@@ -235,7 +249,7 @@
                 <h3>Join the tribe.</h3>
                 <p>Life Shotz is different for a reason, and it's time to connect with the Leaders and Brand Reps who will help you take the next step down the path of financial freedom.</p>
                 <p><strong>It sounds great, so register now!</strong></p>
-                <p><button class="active">Register Now</button></p>
+                <p><button class="active radius">Register Now</button></p>
               </div>
          </div>
 
@@ -248,157 +262,189 @@
               
           <div class="row">
               <div class="large-offset-2 medium-8 large-8 columns text-center">
-                <h2 style="margin-top:40px; margin-bottom:20px;">Vision Workshop</h2>
-                <p>We call it a motivational seminar. Others call it the best part of the convention. Join Richard Brooke and decide for yourself.</p>
+                <h2 style="margin-top:40px; margin-bottom:20px;">VISION WORKSHOP:<br><span style="font-size:2.5rem;">WHY YOU NEED TO ATTEND</span></h2>
+                  <span class="bordergrey"></span>
+                <h3>Kick Ignition Off Right</h3>
+                <p>We call it a motivational seminar. Others call it the best part of the convention. Join Life Shotz CVO Richard Brooke for his Vision Workshop and decide for yourself. This all-day workshop will set the tone for your entire Ignition experience as you discover that change is not only possible, but also inevitable. The only question is … who is going to design it? </p>
               </div>
             </div>
 
             <div class="row">
               <div class="large-offset-2 medium-8 large-8 columns text-center">
-                <p>Richard is the Chief Visionary Officer of Life Shotz and a self-made multi-millionaire, and like all superhero business leaders, he's a got a special power: the power to help you shape your life, achieve your goals, and keep your focus.</p>
+                <h3>Break Free of Self-Limitations</h3>
+                <p>Shed the layers of imposed values and negative self-chatter that hold you back. Richard will help you craft a new, powerful Vision, so you can reclaim your lost and forgotten values and rewrite the story of your life … with powerful results.</p>
               </div>
             </div>
 
             <div class="row">    
               <div class="large-offset-2 medium-8 large-8 columns text-center">
-                <p>With Richard leading the way, you'll journey down a path of self-awareness, self-analysis and self-discovery. Along the way you'll redefine your life and open your mind to new opportunities. Most importantly, you'll shed the layers of imposed values and negativity that obscure the core values that determine your personal goals and motivations.</p>
+                <h3>Journey Down the Path of Self-Awareness</h3>
+                <p>With Richard leading the way, you’ll get on the path to inner peace and personal independence, while you sharpen your focus on success and gain insight and clarity on your life’s purpose.</p>
               </div>
             </div>
 
           <div class="row">      
-              <div class="large-offset-3 medium-8 large-8 columns">
-                 <strong> 
-                  <ul>
-                  <li>Reclaim the lost or forgotten values that define your happiness</li>
-                  <li>Discover a newfound personal independence</li>
-                  <li>Gain insight and clarity on your life's purpose</li>
-                  <li>Sharpen your focus on personal success</li>
-                  <li>Open your mind to inner peace and self-discovery</li>
-                  <li>This is your opportunity to set the tone for the Life Shotz Ignition Event, and it's an all-day workshop you can't afford to miss.</li>
-                  </ul>
-                </strong>
+              <div class="large-offset-2 medium-8 large-8 columns text-center">
+                <h3>Turn on the Green Lights</h3>
+                <p>When you see opportunities as “Green Lights,” you’ll be amazed at what you can accomplish … and how quickly. Green lights are how you fall in love with your daily actions, and prospect with fun, momentum and CONFIDENCE.</p>
               </div>
           </div>    
 
          <div class="row" style="margin-bottom:40px;">
            <div class="large-offset-2 medium-8 large-8 columns text-center">
-                <p>This is your opportunity to set the tone for the Life Shotz Ignition Event, and it's an all-day workshop you can't afford to miss.</p>
-                <p><button class="active">Register Now</button></p>
+                <p><strong>Don’t miss this life and career-changing opportunity. Register for Richard Brooke’s incredible Vision Workshop now!</strong></p>
+                <p><button class="active radius">Register Now</button></p>
               </div>
          </div>
 
       </div>
 
 
+      <!-- Hotel Location -->
+
+<div class="hotel" id="hotel">
+    <div class="row">
+      <h2 align="center" style="margin-top:40px; margin-bottom:20px;">Location</h2>
+      <span class="borderwhite"></span>
+        <div class="medium-6 large-6 text-center columns hide-for-small" id="map">
+          <!-- <p><img src="/img/hampton.jpg"></p> -->
+        </div>
+
+        <div class=" medium-6 large-6 columns hotelinfo">
+          <h3>Hampton Inn &amp; Suites</h3>
+          <p>(208) 769-7900<br>1500 Riverstone Dr., Coeur d'Alene, Idaho, 83814, USA<br>
+          <a href="http://hamptoninn3.hilton.com/en/hotels/idaho/hampton-inn-and-suites-coeur-d-alene-CDAIDHX/index.html">Visit Website</a> </p>
+          <div class="rates">
+            <h4>Room Rates</h4>
+            <p><strong>$119</strong> per night for Queen/King Rooms<br>
+                <strong>$139</strong> per night for King Suites<br>
+                Code for discount room rate: <strong>Life Shotz</strong>
+            </p>
+        </div>
+        </div>
+    </div>
+    </div>
+  
 
 <!-- Testimonials -->
 
-<footer>
+<div class="testrow">
       <div class="row">
-      <h2 align="center">Testimonials</h2>
-        <br />
-            <div class=" medium-4 text-center large-4 columns testimonial">
-            <p>
-                          <p style="color:#ffffff;">&ldquo;This weekend has inspired me to take my business to the next level. I am committing myself to talk to one person every day! And I want to be at the retreat.&rdquo;
-                            </p><br>
-
-                            -Michelle Newton<br>Tulare, CA
+      <h2 align="center" style="margin-top:40px; margin-bottom:20px;">Testimonials</h2>
+        <span class="borderwhite"></span>
+            <div class=" medium-4 large-4 columns testimonial">
+                          <p style="color:#ffffff; padding:10px;" class="bubble">&ldquo;This weekend has inspired me to take my business to the next level. I am committing myself to talk to one person every day! And I want to be at the retreat.&rdquo;<br><br><strong>Michelle Newton<br>Tulare, CA</strong>
+                            </p>
+                            <p class="text-center">
+                        <img class="speakerphoto2" src="../img/michellenewton.jpg"><br><br>
                         </p>
             </div>
-            <div class="medium-4 text-center large-4 columns end testimonial">
-            <p>
-                          <p style="color:#ffffff;">&ldquo;It was a life changing experience and I love the team’s attitude! Richard has opened another door for me to conquer and help others reach their health and financial freedom!&rdquo;
-                            </p><br>
-
-                            -Dale Johnson<br>Sturgeon Bay, WI
+            <div class="medium-4 large-4 columns end testimonial">
+                          <p style="color:#ffffff; padding:10px;" class="bubble">&ldquo;It was a life changing experience and I love the team’s attitude! Richard has opened another door for me to conquer and help others reach their health and financial freedom!&rdquo;<br><br><strong>Dale Johnson<br>Sturgeon Bay, WI</strong>
+                            </p>
+                            <p class="text-center">
+                           <img class="speakerphoto2" src="../img/dalejohnson.jpg"><br><br>   
                         </p>
             </div>
-             <div class="medium-4 text-center large-4 columns testimonial">
-            <p>
-                          <p style="color:#ffffff;">&ldquo;This was my first event and I LOVED IT! The speakers, the people, and of course Richard have been absolutely wonderful! I can’t wait to take all that I’ve learned and put it to work.&rdquo;
-                            </p><br>
-
-                            -Allison Smith<br>Panama City, FL
+             <div class="medium-4 large-4 columns testimonial">
+                          <p style="color:#ffffff; padding:10px;" class="bubble">&ldquo;This was my first event and I LOVED IT! The speakers, the people, and of course Richard have been absolutely wonderful! I can’t wait to take all that I’ve learned and put it to work.&rdquo;<br><br><strong>Allison Smith<br>Panama City, FL</strong>
+                            </p>
+                            <p class="text-center">
+                              <img class="speakerphoto2" src="../img/allisonsmith.jpg"><br><br>
+                            
                         </p>
             </div>
       </div>
 <div class="row">
           
-          <div class="medium-4 text-center large-4 columns end testimonial">
-                <p>
-                <p style="color:#ffffff;">&ldquo;I feel so excited to get home and start building my business with all the amazing tools and energy. To be in the room learning from some of those top leaders in this industry … I’m so lucky! Now to make my Vision a reality with my new confidence.&rdquo;
-                  </p><br>
-
-                  -Jodi McClain<br>Tomball, TX
+          <div class="medium-4 large-4 columns end testimonial">
+                <p style="color:#ffffff; padding:10px;" class="bubble">&ldquo;I feel so excited to get home and start building my business with all the amazing tools and energy. To be in the room learning from some of those top leaders in this industry … I’m so lucky! Now to make my Vision a reality with my new confidence.&rdquo;<br><br>
+                <strong>Jodi McClain<br>
+                Tomball, TX</strong>
+                  </p>
+                    <p class="text-center"><img class="speakerphoto2" src="../img/jodimclain.jpg">
               </p>
         </div>
-        <div class="medium-4 text-center large-4 columns testimonial">
-        <p>
-                      <p style="color:#ffffff;">&ldquo;Ignition opened my mind to achieving my highest potential in building my business and personal goals. I feel totally connected, tapped in, and on fire!&rdquo;
-                        </p><br>
-
-                        -Wendy Powell <br>Marshfield, MA
-                    </p>
+        <div class="medium-4 large-4 columns testimonial">
+                      <p style="color:#ffffff; padding:10px;" class="bubble">&ldquo;Ignition opened my mind to achieving my highest potential in building my business and personal goals. I feel totally connected, tapped in, and on fire!&rdquo;<br><br><strong>Wendy Powell <br>Marshfield, MA</strong>
+                        </p>
+                          <p class="text-center">
+                            <img class="speakerphoto2" src="../img/wendypowell.jpg"><br><br>
+                          </p>
         </div>
-        <div class="medium-4 text-center large-4 columns end">
-        <p>
-                      <p style="color:#ffffff;">&ldquo;The time went so quickly! Richard was incredible as well as all the speakers and leaders. I experienced some significant breakthroughs and now I expect my business to skyrocket.&rdquo;
-                        </p><br>
-
-                        -Dian Johns <br>Houston,TX
+        <div class="medium-4 large-4 columns end">
+                      <p style="color:#ffffff; padding:10px;" class="bubble">&ldquo;The time went so quickly! Richard was incredible as well as all the speakers and leaders. I experienced some significant breakthroughs and now I expect my business to skyrocket.&rdquo;<br><br><strong>Dian Johns <br>Houston,TX</strong>
+                        </p>
+                        <p class="text-center">
+                        <img class="speakerphoto2" src="../img/dianjohns.jpg"><br><br>
                     </p>
         </div>
     </div>
-</footer>
+</div>
 
-
-<!-- <footer>
-      <ul class="example-orbit-content" data-orbit data-options="animation:slide;
-                  pause_on_hover:false;
-                  animation_speed:300;
-                  timer_speed: 1000;
-                  bullets:false;
-                   timer: true;
-                   timer_container_class: false;
-                   timer_progress_class:false;
-                    slide_number: false;
-                    navigation_arrows: true;">
-        <li data-orbit-slide="headline-1">
-          <div class="text-center panel">
-              <p>
-                <h5>&ldquo;This weekend has inspired me to take my business to the next level. I am committing myself to talk to one person every day! And I want to be at the retreat.&rdquo;
-                  </h5>
-
-                  -Michelle Newton&nbsp;Tulare, CA
-              </p>
-          </div>
-        </li>
-        <li data-orbit-slide="headline-2">
-          <div class="text-center panel">
-            <h2>Headline 2</h2>
-            <h3>Subheadline</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos animi, nobis illo. Repellendus atque dolorem, officia recusandae autem, laudantium consectetur, neque!</p>
-          </div>
-        </li>
-        <li data-orbit-slide="headline-3">
-          <div class="text-center panel">
-            <h2>Headline 3</h2>
-            <h3>Subheadline</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos animi, nobis illo. Repellendus atque dolorem, officia recusandae autem, laudantium consectetur, neque!</p>
-          </div>
-        </li>
-      </ul>
-    </footer> -->
     
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
     <script type="text/javascript" src="js/scrolld.js"></script>
+    <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBRV3-cLUxvrBGubAyf8UahgPJZWSN7pzk&sensor=false&extension=.js'></script>
     <script>
       $(document).foundation();
 
         $(document).ready(function(){
 
+
           $("[id*='Btn']").stop(true).on('click',function(e){e.preventDefault();$(this).scrolld();});
+
+          google.maps.event.addDomListener(window, 'load', init);
+    var map;
+    function init() {
+        var mapOptions = {
+            center: new google.maps.LatLng(47.693386,-116.806711),
+            zoom: 17,
+            zoomControl: false,
+            disableDoubleClickZoom: false,
+            mapTypeControl: false,
+            scaleControl: false,
+            scrollwheel: false,
+            panControl: false,
+            streetViewControl: false,
+            draggable : true,
+            overviewMapControl: false,
+            overviewMapControlOptions: {
+                opened: false,
+            },
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+            styles: [{"featureType":"landscape","stylers":[{"saturation":-100},{"lightness":65},{"visibility":"on"}]},{"featureType":"poi","stylers":[{"saturation":-100},{"lightness":51},{"visibility":"simplified"}]},{"featureType":"road.highway","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"road.arterial","stylers":[{"saturation":-100},{"lightness":30},{"visibility":"on"}]},{"featureType":"road.local","stylers":[{"saturation":-100},{"lightness":40},{"visibility":"on"}]},{"featureType":"transit","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"administrative.province","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"on"},{"lightness":-25},{"saturation":-100}]},{"featureType":"water","elementType":"geometry","stylers":[{"hue":"#ffff00"},{"lightness":-25},{"saturation":-97}]}],
+        }
+        var mapElement = document.getElementById('map');
+        var map = new google.maps.Map(mapElement, mapOptions);
+        var locations = [
+['Ignition 2015', 'undefined', 'undefined', 'undefined', 'undefined', 47.6935507, -116.80836139999997, 'https://mapbuildr.com/assets/img/markers/solid-pin-blue.png']
+        ];
+        for (i = 0; i < locations.length; i++) {
+      if (locations[i][1] =='undefined'){ description ='';} else { description = locations[i][1];}
+      if (locations[i][2] =='undefined'){ telephone ='';} else { telephone = locations[i][2];}
+      if (locations[i][3] =='undefined'){ email ='';} else { email = locations[i][3];}
+           if (locations[i][4] =='undefined'){ web ='';} else { web = locations[i][4];}
+           if (locations[i][7] =='undefined'){ markericon ='';} else { markericon = locations[i][7];}
+            marker = new google.maps.Marker({
+                icon: markericon,
+                position: new google.maps.LatLng(locations[i][5], locations[i][6]),
+                map: map,
+                title: locations[i][0],
+                desc: description,
+                tel: telephone,
+                email: email,
+                web: web
+            });
+link = '';     }
+
+}
+
+// document.getElementById('bgvid').addEventListener('loadedmetadata', function() {
+//   this.currentTime = 3.5;
+// }, false);
+
 
         }); 
     </script>
