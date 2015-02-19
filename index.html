@@ -19,7 +19,7 @@
     <nav class="top-bar" data-topbar role="navigation">
   <ul class="title-area">
     <li class="name">
-      <a href="index.html"><img class="logo" src="/img/logo.png"></a>
+      <a href="index.html"><img class="logo" src="img/logo.png"></a>
     </li>
   
     <li class="toggle-topbar menu-icon"><a href="#"><span>MENU</span></a></li>
@@ -28,11 +28,11 @@
   <section class="top-bar-section">
     <ul class="right">
     <li class="active"><a href="#">Register</a></li>
-    <li><a id="packagesBtn">Packages</a></li>
-      <li><a id="scheduleBtn">Schedule</a></li>
-      <li><a id="5reasonsBtn">5 Reasons</a></li>
-      <li><a id="visionBtn">Your Vision</a></li>
-      <li><a id="hotelBtn">Hotel</a></li>
+    <li><a id="packagesBtn" data-scroll-nav="0">Packages</a></li>
+      <li><a id="scheduleBtn" data-scroll-nav="1">Schedule</a></li>
+      <li><a id="5reasonsBtn" data-scroll-nav="2">5 Reasons</a></li>
+      <li><a id="visionBtn" data-scroll-nav="3">Your Vision</a></li>
+      <li><a id="hotelBtn" data-scroll-nav="4">Hotel</a></li>
     </ul>
   </section>
 </nav>
@@ -45,16 +45,24 @@
             </video>
         <div class="row">
           <div class="large-12 columns text-center">
-            <p><img src="/img/header_logo_flat.png"></p>
-            <a id="cdaBtn"><p class="scroll"><img src="/img/scroll_arrow.png"></p></a>
+            <p><img src="img/header_logo_flat.png"></p>
             <!-- Arrow Created by Ben Howard -->
           </div>
+
+        </div>
+        <div class="row">
+          <div class="large-12 columns text-center">
+            <p class="scroll">
+            <a id="cdaBtn"><img src="img/scroll_arrow.png"></a></p>
+            <!-- Arrow Created by Ben Howard -->
+          </div>
+          
         </div>
         </header>
     
     <div class="intro" id="cda">
       <div class="row">
-      <h2 align="center">We're Gonna Be On Fire!</h2>
+      <h2 align="center">IT’S TIME TO IGNITE YOUR FIRE</h2>
       <span class="borderwhite"></span>
           <div class="large-5 medium-5 columns hide-for-small">
               <ul class="example-orbit-content" data-orbit 
@@ -68,21 +76,29 @@
                   timer_speed: 5000;
                   timer_progress_class: false;">
                 <li>
-                <img src="/img/cda1.jpg" alt="slide 1" />
+                <img src="img/cda3.jpg" alt="slide 1" />
     
               </li>
               <li class="active">
-                <img src="/img/cda2.jpg" alt="slide 2" />
+                <img src="img/cda5.jpg" alt="slide 2" />
               </li>
               <li>
-                <img src="/img/cda3.jpg" alt="slide 3" />
+                <img src="img/cda4.jpg" alt="slide 3" />
+              </li>
+              <li>
+                <img src="img/cda2.jpg" alt="slide 3" />
+              </li>
+              <li>
+                <img src="img/cda6.jpg" alt="slide 3" />
               </li>
                   </ul>
           </div>
         <div class="large-7 medium-7 columns">
+            <p>Ignition is hitting our home town and we can’t wait for our tribe to explore our great surroundings and meet our incredible home office team.</p>
               <p>The lakeside community of Coeur d’Alene is a haven of spectacular natural beauty. Known as “your lakeside playground,” there’s something for everyone, from avid golfers to boaters to those who just love a beautiful sunset.</p>
               <p>Of course … at Ignition, the magic is gonna be happening on stage! Join us as the best of the best in our industry light your fire and teach you the skills to grow your business full out.</p>
               <p>Ignition is <strong style="font-weight:400;">THE EVENT</strong> for teams to grow their belief, their knowledge, their excitement and ultimately … their wealth! </p>
+              <!-- <p>Don’t miss Ignition Coeur d’Alene 2015! Make plans to attend NOW!</p> -->
           </div>
       </div>
       <br>
@@ -91,24 +107,24 @@
 
 
     <!-- Pricing Tables -->
-    <div class="colorrow2" id="packages">
+    <div class="colorrow2" id="packages" data-scroll-index="0">
       <div class="row">
       <h2 align="center" style="margin-top:40px; margin-bottom:20px;">Packages</h2>
       <span class="bordergrey"></span>
       <br>
         <div class="large-12 columns">
-        		<div class="large-6 columns">
-              	<ul class="pricing-table">
+            <div class="large-6 columns">
+                <ul class="pricing-table">
                     <li class="title" style="font-size:1.25rem;">GOOD DEAL</li>
-                    <li class="price">$249.99</li>
+                    <li class="price">$249</li>
                     <li class="bullet-item" style="font-size:1.25rem;">$249 Ignition Event</li>
                     <li class="cta-button"><a class="button radius" href="#">Register Now</a></li>
                   </ul>
                  </div>
                  <div class="large-6 columns">
-              	<ul class="pricing-table">
+                <ul class="pricing-table">
                     <li class="title" style="font-size:1.25rem;">BEST DEAL</li>
-                    <li class="price">$349.99</li>
+                    <li class="price">$349</li>
                     <li class="bullet-item" style="font-size:1.25rem;">$249 Ignition Event</li>
                     <li class="bullet-item" style="font-size:1.25rem;">$100 Vision Workshop</li>
                     <li class="cta-button"><a class="button radius" href="#">Register Now</a></li>
@@ -125,22 +141,22 @@
         <h2 align="center" style="margin-top:40px; margin-bottom:20px;">Speakers</h2>
         <span class="borderwhite"></span>
         <div class="medium-3 large-3 text-center columns">
-          <img class="speakerphoto" src="/img/richard.jpg">
+          <img class="speakerphoto" src="img/richard.jpg">
             <h4>Richard Brooke</h4>
             <p>Chief Visionary Officer</p>
         </div>
         <div class="medium-3 large-3 text-center columns">
-          <img class="speakerphoto" src="/img/lisa.jpg">
+          <img class="speakerphoto" src="img/lisa.jpg">
             <h4>Lisa Jimenez</h4>
             <p>Advisory Board, Owner, Platinum</p>
         </div>
         <div class="medium-3 large-3 text-center columns">
-          <img class="speakerphoto" src="/img/kimmy.jpg">
+          <img class="speakerphoto" src="img/kimmy.jpg">
             <h4>Kimmy Brooke</h4>
             <p>Advisory Board</p>
         </div>
         <div class="medium-3 large-3 text-center columns">
-          <img class="speakerphoto" src="/img/melissa.jpg">
+          <img class="speakerphoto" src="img/melissa.jpg">
             <h4>Melissa Gulbranson</h4>
             <p>Vice President of Marketing</p>
         </div>
@@ -148,24 +164,24 @@
 
       <div class="row">
         <div class="medium-3 large-3 text-center columns">
-          <img class="speakerphoto" src="/img/stacey.jpg">
+          <img class="speakerphoto" src="img/stacey.jpg">
             <h4>Stacey Holley</h4>
-            <p>Vice President of Operations</p>
+            <p>Chief Operations Officer</p>
         </div>
         <div class="medium-3 large-3 text-center columns">
-          <img class="speakerphoto" src="/img/courtney.jpg">
+          <img class="speakerphoto" src="img/courtney.jpg">
             <h4>Courtney Schwagler</h4>
             <p>Director of Product Education</p>
         </div>
         <div class="medium-3 large-3 text-center columns end">
-          <img class="speakerphoto" src="/img/tom.jpg">
+          <img class="speakerphoto" src="img/tom.jpg">
             <h4>Tom Lunneborg</h4>
             <p>Vice President of Product Development and Logistics</p>
         </div>
       </div>
 </div>
 
-<div class="colorrow3 schedule" id="schedule">
+<div class="colorrow3 schedule" id="schedule" data-scroll-index="1">
 <div class="row">
             <div class="large-6 columns">
             <!-- Schedule -->
@@ -199,8 +215,8 @@
          
          <!--  Pic Sidebar -->
         <div class="large-6 columns text-center hide-for-small">
-              <p style="margin-top:40px;"><img src="/img/agenda1.jpg"/></p>
-              <p><img src="/img/agenda2.jpg"/></p>
+              <p style="margin-top:40px;"><img src="img/agenda1.jpg"/></p>
+              <p><img src="img/agenda2.jpg"/></p>
         </div>
         
       </div>
@@ -212,7 +228,7 @@
 <!-- 5 Reasons -->
 
 
-        <div class="fivereasons" id="5reasons">
+        <div class="fivereasons" id="5reasons" data-scroll-index="2">
               
           <div class="row">
               <div class="large-offset-2 medium-8 large-8 columns text-center">
@@ -248,21 +264,27 @@
            <div class="large-offset-2 medium-8 large-8 columns text-center">
                 <h3>Join the tribe.</h3>
                 <p>Life Shotz is different for a reason, and it's time to connect with the Leaders and Brand Reps who will help you take the next step down the path of financial freedom.</p>
-                <p><strong>It sounds great, so register now!</strong></p>
-                <p><button class="active radius">Register Now</button></p>
               </div>
          </div>
 
       </div>
 
+<div style="width:100%; background:#850c70;">
+<div class="row" style="margin-bottom:20px;">
+           <div class="medium-12 large-12 columns text-center">
+                <p style="margin-top:20px"><h4 style="color:#fcfcfc;">It sounds great, so register now!<button class="active radius" style="margin-left:40px;">Register</button></h4></p>
+              </div>
+         </div>
+
+      </div>
 
 <!--  Vision Workshop -->
 
   <div class="workshop" id="vision">
               
           <div class="row">
-              <div class="large-offset-2 medium-8 large-8 columns text-center">
-                <h2 style="margin-top:40px; margin-bottom:20px;">VISION WORKSHOP:<br><span style="font-size:2.5rem;">WHY YOU NEED TO ATTEND</span></h2>
+              <div class="large-offset-2 medium-8 large-8 columns text-center" data-scroll-index="3">
+                <h2 style="margin-top:40px; margin-bottom:20px;">VISION WORKSHOP<!-- <span style="font-size:2.5rem;">WHY YOU NEED TO ATTEND</span> --></h2>
                   <span class="bordergrey"></span>
                 <h3>Kick Ignition Off Right</h3>
                 <p>We call it a motivational seminar. Others call it the best part of the convention. Join Life Shotz CVO Richard Brooke for his Vision Workshop and decide for yourself. This all-day workshop will set the tone for your entire Ignition experience as you discover that change is not only possible, but also inevitable. The only question is … who is going to design it? </p>
@@ -293,7 +315,6 @@
          <div class="row" style="margin-bottom:40px;">
            <div class="large-offset-2 medium-8 large-8 columns text-center">
                 <p><strong>Don’t miss this life and career-changing opportunity. Register for Richard Brooke’s incredible Vision Workshop now!</strong></p>
-                <p><button class="active radius">Register Now</button></p>
               </div>
          </div>
 
@@ -302,18 +323,18 @@
 
       <!-- Hotel Location -->
 
-<div class="hotel" id="hotel">
+<div class="hotel" id="hotel" data-scroll-index="4">
     <div class="row">
       <h2 align="center" style="margin-top:40px; margin-bottom:20px;">Location</h2>
       <span class="borderwhite"></span>
         <div class="medium-6 large-6 text-center columns hide-for-small" id="map">
-          <!-- <p><img src="//img/hampton.jpg"></p> -->
+          <!-- <p><img src="img/hampton.jpg"></p> -->
         </div>
 
         <div class=" medium-6 large-6 columns hotelinfo">
           <h3>Hampton Inn &amp; Suites</h3>
           <p>(208) 769-7900<br>1500 Riverstone Dr., Coeur d'Alene, Idaho, 83814, USA<br>
-          <a href="http://hamptoninn3.hilton.com/en/hotels/idaho/hampton-inn-and-suites-coeur-d-alene-CDAIDHX/index.html">Visit Website</a> </p>
+          <a href="http://hamptoninn3.hilton.com/en/hotels/idaho/hampton-inn-and-suites-coeur-d-alene-CDAIDHX/index.html" target="_blank">Visit Website</a> </p>
           <div class="rates">
             <h4>Room Rates</h4>
             <p><strong>$119</strong> per night for Queen/King Rooms<br>
@@ -330,27 +351,27 @@
 
 <div class="testrow">
       <div class="row">
-      <h2 align="center" style="margin-top:40px; margin-bottom:20px;">Testimonials</h2>
+      <h2 align="center" style="margin-top:40px; margin-bottom:20px;">WHAT OTHERS ARE SAYING</h2>
         <span class="borderwhite"></span>
             <div class=" medium-4 large-4 columns testimonial">
                           <p style="color:#ffffff; padding:10px;" class="bubble">&ldquo;This weekend has inspired me to take my business to the next level. I am committing myself to talk to one person every day! And I want to be at the retreat.&rdquo;<br><br><strong>Michelle Newton<br>Tulare, CA</strong>
                             </p>
                             <p class="text-center">
-                        <img class="speakerphoto2" src="/img/michellenewton.jpg"><br><br>
+                        <img class="speakerphoto2" src="img/michellenewton.jpg"><br><br>
                         </p>
             </div>
             <div class="medium-4 large-4 columns end testimonial">
                           <p style="color:#ffffff; padding:10px;" class="bubble">&ldquo;It was a life changing experience and I love the team’s attitude! Richard has opened another door for me to conquer and help others reach their health and financial freedom!&rdquo;<br><br><strong>Dale Johnson<br>Sturgeon Bay, WI</strong>
                             </p>
                             <p class="text-center">
-                           <img class="speakerphoto2" src="/img/dalejohnson.jpg"><br><br>   
+                           <img class="speakerphoto2" src="img/dalejohnson.jpg"><br><br>   
                         </p>
             </div>
              <div class="medium-4 large-4 columns testimonial">
                           <p style="color:#ffffff; padding:10px;" class="bubble">&ldquo;This was my first event and I LOVED IT! The speakers, the people, and of course Richard have been absolutely wonderful! I can’t wait to take all that I’ve learned and put it to work.&rdquo;<br><br><strong>Allison Smith<br>Panama City, FL</strong>
                             </p>
                             <p class="text-center">
-                              <img class="speakerphoto2" src="/img/allisonsmith.jpg"><br><br>
+                              <img class="speakerphoto2" src="img/allisonsmith.jpg"><br><br>
                             
                         </p>
             </div>
@@ -362,21 +383,21 @@
                 <strong>Jodi McClain<br>
                 Tomball, TX</strong>
                   </p>
-                    <p class="text-center"><img class="speakerphoto2" src="/img/jodimclain.jpg">
+                    <p class="text-center"><img class="speakerphoto2" src="img/jodimclain.jpg">
               </p>
         </div>
         <div class="medium-4 large-4 columns testimonial">
                       <p style="color:#ffffff; padding:10px;" class="bubble">&ldquo;Ignition opened my mind to achieving my highest potential in building my business and personal goals. I feel totally connected, tapped in, and on fire!&rdquo;<br><br><strong>Wendy Powell <br>Marshfield, MA</strong>
                         </p>
                           <p class="text-center">
-                            <img class="speakerphoto2" src="/img/wendypowell.jpg"><br><br>
+                            <img class="speakerphoto2" src="img/wendypowell.jpg"><br><br>
                           </p>
         </div>
         <div class="medium-4 large-4 columns end">
                       <p style="color:#ffffff; padding:10px;" class="bubble">&ldquo;The time went so quickly! Richard was incredible as well as all the speakers and leaders. I experienced some significant breakthroughs and now I expect my business to skyrocket.&rdquo;<br><br><strong>Dian Johns <br>Houston,TX</strong>
                         </p>
                         <p class="text-center">
-                        <img class="speakerphoto2" src="/img/dianjohns.jpg"><br><br>
+                        <img class="speakerphoto2" src="img/dianjohns.jpg"><br><br>
                     </p>
         </div>
     </div>
@@ -387,66 +408,7 @@
     <script src="js/foundation.min.js"></script>
     <script type="text/javascript" src="js/scrolld.js"></script>
     <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBRV3-cLUxvrBGubAyf8UahgPJZWSN7pzk&sensor=false&extension=.js'></script>
-    <script>
-      $(document).foundation();
-
-        $(document).ready(function(){
-
-
-          $("[id*='Btn']").stop(true).on('click',function(e){e.preventDefault();$(this).scrolld();});
-
-          google.maps.event.addDomListener(window, 'load', init);
-    var map;
-    function init() {
-        var mapOptions = {
-            center: new google.maps.LatLng(47.693386,-116.806711),
-            zoom: 17,
-            zoomControl: false,
-            disableDoubleClickZoom: false,
-            mapTypeControl: false,
-            scaleControl: false,
-            scrollwheel: false,
-            panControl: false,
-            streetViewControl: false,
-            draggable : true,
-            overviewMapControl: false,
-            overviewMapControlOptions: {
-                opened: false,
-            },
-            mapTypeId: google.maps.MapTypeId.ROADMAP,
-            styles: [{"featureType":"landscape","stylers":[{"saturation":-100},{"lightness":65},{"visibility":"on"}]},{"featureType":"poi","stylers":[{"saturation":-100},{"lightness":51},{"visibility":"simplified"}]},{"featureType":"road.highway","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"road.arterial","stylers":[{"saturation":-100},{"lightness":30},{"visibility":"on"}]},{"featureType":"road.local","stylers":[{"saturation":-100},{"lightness":40},{"visibility":"on"}]},{"featureType":"transit","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"administrative.province","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"on"},{"lightness":-25},{"saturation":-100}]},{"featureType":"water","elementType":"geometry","stylers":[{"hue":"#ffff00"},{"lightness":-25},{"saturation":-97}]}],
-        }
-        var mapElement = document.getElementById('map');
-        var map = new google.maps.Map(mapElement, mapOptions);
-        var locations = [
-['Ignition 2015', 'undefined', 'undefined', 'undefined', 'undefined', 47.6935507, -116.80836139999997, 'https://mapbuildr.com/assets//img/markers/solid-pin-blue.png']
-        ];
-        for (i = 0; i < locations.length; i++) {
-      if (locations[i][1] =='undefined'){ description ='';} else { description = locations[i][1];}
-      if (locations[i][2] =='undefined'){ telephone ='';} else { telephone = locations[i][2];}
-      if (locations[i][3] =='undefined'){ email ='';} else { email = locations[i][3];}
-           if (locations[i][4] =='undefined'){ web ='';} else { web = locations[i][4];}
-           if (locations[i][7] =='undefined'){ markericon ='';} else { markericon = locations[i][7];}
-            marker = new google.maps.Marker({
-                icon: markericon,
-                position: new google.maps.LatLng(locations[i][5], locations[i][6]),
-                map: map,
-                title: locations[i][0],
-                desc: description,
-                tel: telephone,
-                email: email,
-                web: web
-            });
-link = '';     }
-
-}
-
-// document.getElementById('bgvid').addEventListener('loadedmetadata', function() {
-//   this.currentTime = 3.5;
-// }, false);
-
-
-        }); 
-    </script>
+    <script type="text/javascript" src="js/scrollIt.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
   </body>
 </html>

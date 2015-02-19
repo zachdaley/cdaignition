@@ -11,7 +11,10 @@ Lime Green: #BCDF1C;
 Purple: #850c70;
 Dark Grey: #4e4a47;
 ***************/
+.location {
 
+	background: red;
+}
 h3,p {
 
 	font-weight: 200;
@@ -33,7 +36,7 @@ h2 {
 .button:hover{
 
 	background: #ad208e;
-	color:#ffffff;
+	color:#fcfcfc;
 	font-weight: 200;
 }
 
@@ -59,6 +62,10 @@ h2 {
 }
 
 
+.active {
+
+	background:red;
+}
 
 
 
@@ -75,12 +82,12 @@ h2 {
  	}
 
 .hero p.scroll {
-	margin-top: 10rem;
+	margin-top: 100px;
 }
  	
  	video#bgvid {
 
-	position: fixed; 
+	position: absolute; 
 	right: 0; 
 	bottom: 0;
 	min-width: 100%; 
@@ -88,7 +95,6 @@ h2 {
 	width: auto; 
 	height: auto; 
 	z-index: -100;
-	background-size: cover;
 	}
 
 
@@ -96,35 +102,50 @@ h2 {
 	height:100%;
 	width:100%;
 	/*background: url('/img/header.jpg') center no-repeat;*/
-	background-size: cover;
 	z-index: 100;
 	
 	}
 
 	.hero p {
 
-		margin-top: 20rem;
+		margin-top: 350px;
+		z-index: -50;
+		
 	}
+
+
+
+@media screen and (max-height: 700px) {
+    .hero p {
+        margin-top: 150px;
+    }
+}
 
 
 	.top-bar.expanded .title-area {
 
-		background: #ffffff;
+		background: #fcfcfc;
 	}
 	
 	.top-bar, .top-bar-section li:not(.has-form) a:not(.button),.top-bar .name h1 a, .top-bar .name h2 a, .top-bar .name h3 a, .top-bar .name h4 a, .top-bar .name p a,.top-bar .toggle-topbar a {
 		
-		background:#ffffff;
+		background:#fcfcfc;
 		color:#333333;
 		font-size: 1.25rem;
 		font-weight: 200;
 		
 		}
 
+
+		.top-bar-section li:not(.has-form) a:not(.button):active {
+
+			background: red;
+		}
+
 		.top-bar-section li:not(.has-form) a:not(.button):hover{
 
 		background: #850c70;
-		color:#ffffff;
+		color:#fcfcfc;
 		font-size: 1.25rem;
 		font-weight: 200;
 		
@@ -148,7 +169,7 @@ h2 {
 .top-bar-section li.active:not(.has-form) a:not(.button):hover{
 
 	background: #ad208e;
-	color:#ffffff;
+	color:#fcfcfc;
 }
 /*****************
 
@@ -161,6 +182,7 @@ h2 {
 	padding-top:40px;
 	padding-bottom:20px;
 	background: #4e4a47;
+	z-index: 50;
 
 }
 
@@ -171,7 +193,7 @@ h2 {
 }
 
 .intro h2 {
-	color: #BCDF1C;
+	color: #fcfcfc;
 	font-weight: 700;
 	font-size: 3.5rem;
 	letter-spacing: 1px;
@@ -406,7 +428,7 @@ button.active {
 button.active:hover {
 
 	background: #ad208e;
-	color:#ffffff;
+	color:#fcfcfc;
 	font-weight: 200;
 }
 
@@ -417,7 +439,7 @@ button.active:hover {
 
 .schedule h2, .schedule p, .schedule h3 {
 
-	color: #ffffff;
+	color: #fcfcfc;
 	font-weight: 200;
 }
 
